@@ -1,0 +1,56 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins,sans-serif;
+  background-color: black;
+}
+
+.Main-Container {
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e0e0e0;
+  text-align: center;
+  padding-bottom: 35%;
+}
+
+.logo {
+  width: 5em;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 6em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.Nav-Links {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  font-size: 1.2rem;
+}
+.Nav-Links a {
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: #e0e0e0;
+}
+.Nav-Links a:hover {
+  transition: .2s ease-in-out;
+  border-color: #fff;
+}
+
+
+
+.Main-Text {
+  padding-top: 7em;
+}
+
