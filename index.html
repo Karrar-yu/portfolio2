@@ -1,41 +1,60 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="icon" href="src/img/logo.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="src/css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfo2</title>
+  <title>Portfolio</title>
 </head>
 <body>
+
   
 <div id="root">
   <section class="Main-Container">
-    <nav>
+    
+    <nav id="mainNav">
       <a aria-current="page" class="active" href="/" style="cursor: pointer;">
         <img class="logo" src="src/img/logo.png">
       </a>
-
+    
       <article class="Nav-Links">
-        <a aria-current="page" class="active" href="/">Home</a>
-        <a aria-current="page" class="active" href="/">Projects</a>
-        <a aria-current="page" class="active" href="/">Contact</a>
+        <a aria-current="page" class="active" href="index.html">Home</a>
+        <a aria-current="page" class="active" href="#projects">Projects</a>
+        <a aria-current="page" class="active" href="#contact">Contact</a>
+        <a href="#about">About</a>
       </article>
     </nav>
+    
+  
+    <ul class="menu">
+      <li><a class="menuItem" href="index.html">Home</a></li>
+      <li><a class="menuItem" href="#projects">Profile</a></li>
+      <li><a class="menuItem" href="#about">About</a></li>
+      <li><a class="menuItem" href="#contact">Contacts</a></li>
+    </ul>
+    <i class="hamburger">
+      <box-icon name='menu' color='grey' style="width: 50px; height: 50px;" ></box-icon>
+    </i> 
+  
 
     
     <article class="Main-Text">
+      
       <h3>Hey there,</h3>
       <h1>I'm a Frontend Developer</h1>
-      <button class="View-Projects">View Projects</button>
+      <button  class="View-Projects">View Projects</button>
     </article >
 
   </section>
 
 </div>
 
-<section class="About-Section">
+<section  id="about" class="About-Section">
   <article class="About-Me">
     <h2>Hi, I'm Karrar. Nice to meet you.</h2>
     <article class="About-Text">
@@ -121,7 +140,7 @@
   </section>
   -->
 
-  <section class="project-container container">
+  <section id="projects" class="project-container container">
     <article class="row text-center">
       <article class="col">
         <article class="project-title">
@@ -130,14 +149,20 @@
             <span></span>
           </div>
         </article>
+
+
+
+
+
+        
         <article class="Project-container container-fluid">
             <img width="600px" height="335px" class="img-fluid rounded float-start" src="src/img/web2.jpg" alt="">
             <article class="Project-text">
               <h3>Ecommerce Clothes</h3>
-              <p>The Gym Guide website includes a Calorie tracking service, access to a database of all exercises for each muscle group with a search bar and a gym guide form that returns to you a specified workout routine and caloric intake based on your goals and user authentication. all built from scratch using APIs </p>
+              <p>The E-Commerce Emporium is a comprehensive online marketplace that offers a diverse range of products and services. With a user-friendly interface and seamless navigation, our website provides an unparalleled shopping experience. Built entirely from scratch using APIs.</p>
               <article class="Project-Text-Buttons ">
-                <a class="Live-Preview" href="https://fir-practice-5eec1.web.app/">Live Preview</a>
-                <a class="More-Info" href="/project/1">More Info</a>
+                <a class="Live-Preview" href="https://github.com/SashaYuu/eCommerce/tree/main/the-webshop-team-11">View Code</a>
+                <a class="More-Info" href="#">More Info</a>
               </article>
     
     
@@ -151,10 +176,10 @@
             <img width="600px" height="335px" class="img-fluid rounded float-start" src="src/img/web1.jpg" alt="">
             <article class="Project-text">
               <h3>Weahter App</h3>
-              <p>The Gym Guide website includes a Calorie tracking service, access to a database of all exercises for each muscle group with a search bar and a gym guide form that returns to you a specified workout routine and caloric intake based on your goals and user authentication. all built from scratch using APIs </p>
+              <p>Introducing WeatherWise, your go-to weather app powered by APIs. Effortlessly check real-time forecasts worldwide with our intuitive search feature. Receive hourly updates and severe weather alerts. Trust in our accurate data sourced from reliable weather APIs. WeatherWise now for confident planning, rain or shine</p>
               <article class="Project-Text-Buttons ">
-                <a class="Live-Preview" href="https://fir-practice-5eec1.web.app/">Live Preview</a>
-                <a class="More-Info" href="/project/1">More Info</a>
+                <a class="Live-Preview" href="https://sashayuu.github.io/weather/">Live Preview</a>
+                <a class="More-Info" href="#">More Info</a>
               </article>
     
     
@@ -170,10 +195,38 @@
     
   </section>
 
+  <section id="contact" class="contact-contaienr container-fluid text-center">
+    <article class="row">
+      <article class="col">
+
+     
+    <article class="Contact-Title">
+      <h1>CONTACT ME</h1>
+      <span></span>
+    </article>
+
+    <form class="Contact-Form">
+      <label for="Name">Name</label>
+      <input id="Name" type="text" placeholder="Enter Name" value="" required>
+      <label for="Email">Email</label>
+      <input id="Email" type="email" placeholder="Enter Email" value="" required>
+      <label for="Message">Message</label>
+      <textarea id="Message" placeholder="Enter Message" required></textarea>
+      <button class="Form-Submit-Button">Submit</button>
+    </form>
+
+    <div class="custom-shape-divider-bottom-1695133876"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path><path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path><path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path></svg></div>
+    </article>
+
+  </article>
+</article>
+
+  </section>
+
       
       
-
-
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script type="module" src="src/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
