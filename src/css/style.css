@@ -276,7 +276,27 @@ background-color: #43434399;
   gap: 1em;
 }
 
+.hover {
+  --c:linear-gradient(rgb(0, 251, 255) 0 0); /* update the color here */
+  
+  padding-bottom: .15em;
+  background: var(--c), var(--c);
+  background-size: .3em .1em;
+  background-position:50% 100%;
+  background-repeat: no-repeat;
+  transition: .3s linear, background-size .3s .2s linear;
+}
+.hover:hover {
+  background-size: 40% .1em;
+  background-position: 10% 100%, 90% 100%;
+}
 
+.About-Links a:hover {
+  font-size: 20px;
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+
+}
 
 
 .Skills-Title {
@@ -399,7 +419,7 @@ background-color: #43434399;
 
 
 @media (max-width: 750px){
-.Project-container {
+.Project-container .cardd .card__face--back {
     gap: 2em;
 }
 }
@@ -410,15 +430,13 @@ background-color: #43434399;
     justify-content: center;
     gap: 7em;
     padding-bottom: 10%;
-
-
     padding: 5em 10em;
     width: 80dvw;
     border-radius: 25px;
-    margin: 0 auto;
     background-color: #efefef;
     gap: 2em;
 }
+
 
 
 
@@ -716,3 +734,105 @@ background-color: #43434399;
     flex: 2 0px;
   }
 }
+
+
+#ecom{
+  margin-bottom: 100px;
+}
+
+@media (max-width: 470px) {
+  #ecom{
+    margin-bottom: 250px;
+  }
+  
+}
+@media (max-width: 1199px) {
+  #ecom{
+    margin-bottom: 270px;
+  }
+  
+}
+
+.margin-text{
+  margin: 10px 10px;
+  padding: 10px 10px;
+
+}
+.cardd {
+  margin-bottom: 20px;
+  position: relative;
+  /* Other styles remain the same */
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.cardd.is-flipped {
+  display: flex;
+  margin-bottom: 20px !important;
+  background-color: #efefef;
+  transform: rotateY(180deg);
+  height: 600px;
+}
+.flippable-section{
+  margin-bottom: 100px;
+}
+
+
+@media (max-width: 1000px) {
+  .cardd.is-flipped  {
+    height: 867px;
+  }
+}
+@media (max-width: 770px) {
+  .cardd.is-flipped  {
+    height: 1046px;
+  }
+}
+
+@media (max-width: 550px) {
+  .cardd.is-flipped  {
+    height: 1100px;
+  }
+}
+
+@media (max-width: 427px) {
+  .cardd.is-flipped {
+    height: 1250px;
+  }
+}
+.card__face {
+  /* Other styles remain the same */
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  /* No additional styling */
+}
+
+.card__face--back {
+  margin-bottom: 50px;
+  border-radius: 10px;
+  color: black;
+  background-color: #efefef;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* No additional rotation needed */
+  transform: rotateY(180deg);
+}
+
+.insideText{
+  padding: 10px 10px;
+  border: solid black;
+  border-radius: 10px;
+  margin-bottom: 14px;
+
+}
+.insideText h1 p {
+  font-size: 0.5rem,;
+}
+.insideText h1 {
+  font-size: 20px !important;
+}
+

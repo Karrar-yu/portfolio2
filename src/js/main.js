@@ -4,6 +4,17 @@ const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
+const cards = document.querySelectorAll('.cardd');
+
+cards.forEach(card => {
+  card.addEventListener('click', function() {
+    this.classList.toggle('is-flipped');
+  });
+});
+
+
+
+
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
