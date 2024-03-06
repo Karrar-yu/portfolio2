@@ -2,10 +2,10 @@
 Welcome to my portfolio! This repository showcases my projects and achievements. Feel free to explore!
 
 ## Projects
-1.Todo list
-2.weather forecast
-3.Ecommerce website
-4.Bookstore website
+* Todo list
+* Weather forecast
+* Ecommerce website
+* Bookstore website
 
 ## Languages used for the projects
 - HTML&CSS
