@@ -44,6 +44,43 @@
     </i> 
   
 
+    <div class="container">
+      <div class="sticky-quote-cta">
+          <a href="#" id="openModal">Bored ?</a>
+      </div>
+  </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <section class="gameContainer">
+                   
+          <div id="snow-game-level-marker" class="snow-game__level-marker"></div>
+          <div id="snow-game" class="snow-game__wrapper">
+            <div id="snow-game-level" class="snow-game__level">
+            </div>
+            <div class="snow-game__snowball"></div>
+          </div>
+          <div id="click-layer" class="snow-game__click-layer"></div>
+          <div id="start" class="snow-game__start">
+            <div class="snow-game__title">
+              PINK <span class="snow-game__title--highlighted">SNOW</span>
+            </div>
+            <div class="snow-game__tutorial">
+              Use &#8678; &#8680; to move, &#8679; to jump
+            </div>
+            <button class="snow-game__start-button snow-game__button">Play</button>
+          </div>
+          <div id="score" class="snow-game__score snow-game__score--hidden"></div>
+
+          </section>
+
+
+      </div>
+  </div>
+
+    
     
     <article class="Main-Text">
       
@@ -407,6 +444,7 @@
       
       
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script type="module" src="src/js/game.js"></script>
   <script type="module" src="src/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
